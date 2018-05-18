@@ -9,7 +9,22 @@
       Title="PgWrapPanel"
       Background="Beige">
 
-    <Grid>
-        
-    </Grid>
+    <WrapPanel >
+
+        <Button Width="100" Content=" Button"/>
+        <Button Width="100" Content=" Button"/>
+        <Button Width="100" Content=" Button"/>
+        <Button Width="100" Content=" Button"/>
+        <Button Width="100" Content=" Button"/>
+        <Button Width="100" Content=" Button"/>
+        <Button Width="100" Content=" Button"/>
+        <Button Width="100" Content=" Button"/>
+
+
+
+
+
+
+
+    </WrapPanel>
 </Page>

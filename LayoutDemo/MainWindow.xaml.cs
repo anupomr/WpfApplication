@@ -37,13 +37,13 @@ namespace LayoutDemo
                 case "btnDockPanel":
                     frmMainArera.Content = new PgDockPanel();
                     break;
-                case "PgGrid":
+                case "btnGrid":
                     frmMainArera.Content = new PgGrid();
                     break;
-                case "PgStakePanel":
+                case "btnStakePanel":
                     frmMainArera.Content = new PgStakePanel();
                     break;
-                case "PgTextControl":
+                case "btnTxt":
                     frmMainArera.Content = new PgTextControl();
                     break;
                 case "btnUnknown":
