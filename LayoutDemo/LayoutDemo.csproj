@@ -66,8 +66,57 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="PgCAnvas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PgDockPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PgGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PgStakePanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PgTextControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PgUniformGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PgWrapPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PgCAnvas.xaml.cs">
+      <DependentUpon>PgCAnvas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PgDockPanel.xaml.cs">
+      <DependentUpon>PgDockPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PgGrid.xaml.cs">
+      <DependentUpon>PgGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PgStakePanel.xaml.cs">
+      <DependentUpon>PgStakePanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PgTextControl.xaml.cs">
+      <DependentUpon>PgTextControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PgUniformGrid.xaml.cs">
+      <DependentUpon>PgUniformGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PgWrapPanel.xaml.cs">
+      <DependentUpon>PgWrapPanel.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

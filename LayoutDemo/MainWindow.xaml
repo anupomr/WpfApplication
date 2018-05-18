@@ -6,7 +6,28 @@
         xmlns:local="clr-namespace:LayoutDemo"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" ButtonBase.Click="StackPanel_Click">
+            <StackPanel.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="Width" Value="70"/>
+                    <Setter Property="Margin" Value="2"/>
+                    <Setter Property="FontSize" Value="8"/>
+                    <Setter Property="Background" Value="AliceBlue"/>
+                    <Setter Property="Foreground" Value="DarkBlue"/>
+                </Style>
+            </StackPanel.Resources>
+            <Button x:Name="btnCanvas" Content="Canvas"/>
+            <Button x:Name="btnStakePanel" Content="Stake Panel"/>
+            <Button x:Name="btnDockPanel" Content="Dock Panel"/>
+            <Button x:Name="btnWrap" Content="Wrap Panel"/>
+            <Button x:Name="btnGrid" Content="Grid"/>
+            <Button x:Name="btnUnknown" Content="Unknown Grid"/>
+            <Button x:Name="btnTxt" Content="text Control"/>
+            <Button x:Name="btncoding" Content="Some Imperative coding"/>
+
+        </StackPanel>
+        <Frame x:Name="frmMainArera"/>
+
+    </DockPanel>
 </Window>
