@@ -1,0 +1,40 @@
+﻿<Window x:Class="DataEntry.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DataEntry"
+        mc:Ignorable="d"
+        Title="Anupom Data Entry Form" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="168*"/>
+            <ColumnDefinition Width="349*"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Column="0" Grid.Row="0" Content="Name"/>
+        <Label Grid.Column="0" Grid.Row="1" Content="Residency"/>
+        <Label Grid.Column="0" Grid.Row="2" Content="Semester"/>
+        <Label Grid.Column="0" Grid.Row="3" Content="Courses"/>
+        <Button Grid.Column="0" Grid.Row="6" Click="Button_Click" Content="Clear"/>
+
+        <TextBox Name="TextBoxName" Grid.Column="1" Grid.Row="0" Text="Anupom"/>
+        <StackPanel Grid.Column="1" Grid.Row="1" Orientation="Horizontal">
+            <RadioButton Name="RadioButtonDomestic" Content="Domestic" IsChecked="True" Width="90"/>
+            <RadioButton Content="International" Width="90"/>
+        </StackPanel>
+        <ComboBox Name="ComboBoxSemester" Grid.Column="1" Grid.Row="2" />
+        <ListBox Name="ListBoxCourses" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="4"/>
+        <Button Grid.Column="1" Grid.Row="6" Click="Button_Click_1"  Content="OK"/>
+
+
+    </Grid>
+</Window>
