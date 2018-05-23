@@ -60,6 +60,18 @@
 
             </MenuItem>
         </Menu>
-        
+        <ToolBarPanel DockPanel.Dock="Top">
+            <ToolBar>
+                <Button Content="Button" />
+                <Image />
+                <ComboBox Text="Options">
+                    <ComboBoxItem Content="item1"/>
+                    <ComboBoxItem Content="item2" IsSelected="True"/>
+                    <ComboBoxItem Content="item3"/>
+                </ComboBox>
+            </ToolBar>
+            
+            
+        </ToolBarPanel>
     </DockPanel>
 </Window>
