@@ -97,7 +97,12 @@
             </Canvas.Resources>
             <Canvas.ContextMenu>
                 <ContextMenu BorderBrush="Black" BorderThickness="1">
-                    
+                    <MenuItem Header="_Export as Excel" Click="MenuItem_Click"/>
+                    <MenuItem Header="Export as _Pdf" Click="MenuItem_Click_1"/>
+                    <MenuItem Header="More items">
+                        <MenuItem Header="Sub item1"/>
+                        <MenuItem Header="Sub items2"/>
+                    </MenuItem>
                 </ContextMenu>
             </Canvas.ContextMenu>
             
