@@ -105,7 +105,32 @@
                     </MenuItem>
                 </ContextMenu>
             </Canvas.ContextMenu>
-            
+            <Ellipse Canvas.Left="70" Canvas.Top="66" Width="120" Height="120"
+                       Name="MyEllipse" Fill="Blue">
+                <Ellipse.Triggers>
+                    <!-- Animates the rectangle's opacity. -->
+                    <EventTrigger RoutedEvent="Rectangle.Loaded">
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation
+                                    Storyboard.TargetName="MyEllipse" 
+                                    Storyboard.TargetProperty="Opacity"
+                                    From="1.0" To="0.0" Duration="0:0:5" 
+                                    AutoReverse="True" RepeatBehavior="Forever" />
+                            </Storyboard>
+                        </BeginStoryboard>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation
+                                    Storyboard.TargetName="MyEllipse" 
+                                    Storyboard.TargetProperty="Width"
+                                    From="120" To="300" Duration="0:0:5" 
+                                    AutoReverse="True" RepeatBehavior="Forever" />
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </EventTrigger>
+                </Ellipse.Triggers>
+            </Ellipse>
         </Canvas>
         
     </DockPanel>
