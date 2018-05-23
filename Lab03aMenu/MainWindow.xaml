@@ -70,8 +70,38 @@
                     <ComboBoxItem Content="item3"/>
                 </ComboBox>
             </ToolBar>
-            
+            <ToolBar>
+                <TextBox Text="some options" />
+                <Separator/>
+                <CheckBox Content="Bold" IsChecked="True"/>
+                <Separator/>
+                <ComboBox Text="Options">
+                    <ComboBoxItem Content="item1"/>
+                    <ComboBoxItem Content="item2" IsSelected="True"/>
+                    <ComboBoxItem Content="item3"/>
+                </ComboBox>
+            </ToolBar>
             
         </ToolBarPanel>
+        <Canvas Background="BurlyWood">
+            <Canvas.Resources>
+                <Style x:Key="Triggers" TargetType="{x:Type MenuItem}">
+                    <Style.Triggers>
+                        <Trigger Property="MenuItem.IsMouseOver" Value="true">
+                            <Setter Property = "FontSize" Value="16"/>
+                            <Setter Property = "FontStyle" Value="Italic"/>
+                            <Setter Property = "Foreground" Value="Red"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Canvas.Resources>
+            <Canvas.ContextMenu>
+                <ContextMenu BorderBrush="Black" BorderThickness="1">
+                    
+                </ContextMenu>
+            </Canvas.ContextMenu>
+            
+        </Canvas>
+        
     </DockPanel>
 </Window>
