@@ -25,7 +25,15 @@
             <MenuItem Header="_New"/>
             <MenuItem Header="_Open"/>
             <Separator/>
-
+            <MenuItem Header="Add"/>
+            <Separator/>
+            <MenuItem Header="Close"/>
+            <MenuItem Header="Close Solution"/>
+            <Separator/>
+            <MenuItem Header="Print"/>
+            <MenuItem Header="Page Setup"/>
+            <Separator/>
+            <MenuItem Header="Exit"/>
         </Menu>
         
     </DockPanel>
