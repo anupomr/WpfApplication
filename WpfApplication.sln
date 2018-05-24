@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab03aMenu", "Lab03aMenu\La
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfDataBindingControl", "WpfDataBindingControl\WpfDataBindingControl.csproj", "{D7AD2817-42FE-46E7-B724-FDBD1E078178}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBinding_SingleObject", "DataBinding_SingleObject\DataBinding_SingleObject.csproj", "{826A11AF-C713-4398-8181-826D2D5EF969}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{D7AD2817-42FE-46E7-B724-FDBD1E078178}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7AD2817-42FE-46E7-B724-FDBD1E078178}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7AD2817-42FE-46E7-B724-FDBD1E078178}.Release|Any CPU.Build.0 = Release|Any CPU
+		{826A11AF-C713-4398-8181-826D2D5EF969}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{826A11AF-C713-4398-8181-826D2D5EF969}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{826A11AF-C713-4398-8181-826D2D5EF969}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{826A11AF-C713-4398-8181-826D2D5EF969}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +58,7 @@ Global
 		{B4816DB2-F647-4FB3-A212-84D792A585A2} = {6002DFAD-05E5-4689-9137-F473F1525494}
 		{45E5DD18-AAF5-40C0-86E0-839F3AD217ED} = {6002DFAD-05E5-4689-9137-F473F1525494}
 		{D7AD2817-42FE-46E7-B724-FDBD1E078178} = {815CD85F-C608-45EE-BF7E-30BC3E1526E8}
+		{826A11AF-C713-4398-8181-826D2D5EF969} = {815CD85F-C608-45EE-BF7E-30BC3E1526E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ADC507B6-7906-4E2F-BB83-454F96B70723}
