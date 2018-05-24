@@ -42,6 +42,9 @@ namespace WpfDataBindingControl
                 case "btnOneWayToSource":
                     new WinOneWayToSource().ShowDialog();
                     break;
+                case "btnOneTime":
+                    new WinOneTimeToTarget().ShowDialog();
+                    break;
 
             }
                  

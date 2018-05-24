@@ -57,6 +57,9 @@
     <Compile Include="WinCoding.xaml.cs">
       <DependentUpon>WinCoding.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WinOneTimeToTarget.xaml.cs">
+      <DependentUpon>WinOneTimeToTarget.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WinOneWayToSource.xaml.cs">
       <DependentUpon>WinOneWayToSource.xaml</DependentUpon>
     </Compile>
@@ -79,6 +82,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="WinCoding.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WinOneTimeToTarget.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
