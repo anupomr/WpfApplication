@@ -6,7 +6,11 @@
         xmlns:local="clr-namespace:WpfDataBindingControl"
         mc:Ignorable="d"
         Title="WinOneWayToSource" Height="300" Width="300">
-    <Grid>
-        
-    </Grid>
+    <StackPanel>
+        <TextBlock TextWrapping="Wrap"
+                    Text="The Target (textBox) is updated via code and source (slider) is updated via code"/>
+        <Slider Minimum="0" Maximum="100" x:Name="sldSource" />
+        <TextBox Text="{Binding ElementName=sldSource, Path=Value, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}" />
+
+    </StackPanel>
 </Window>
