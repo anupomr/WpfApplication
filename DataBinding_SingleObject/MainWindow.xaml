@@ -5,8 +5,39 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DataBinding_SingleObject"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="Binding To a Single object" Height="350" Width="525">
+    <DockPanel>
+        <TextBlock DockPanel.Dock="Top" TextWrapping="Wrap"
+                   Text="The button doesnot work directly with the UI control on the form . Instead, it works with the backing data i.e. An object of the madel class" Margin="10"/>
+        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" HorizontalAlignment="Center">
+            <StackPanel.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="Width" Value="100"/>
+                    <Setter Property="Width" Value="5,1"/>
+                </Style>
+            </StackPanel.Resources>
+            <Button Content="Change Color" Click="btnChageColor"/>
+            <Button Content="Change Name" Click="btnChangeName"/>
+            <Button Content="Show Medal" Click="btnShowObject"/>
+        </StackPanel>
+        <UniformGrid Rows="5" Columns="2" DataContext="{Binding medal }">
+            <UniformGrid.Resources>
+                <Style TargetType="TextBlock">
+                    <!--<Setter Property="Width" Value="100"/>-->
+                    <Setter Property="Margin" Value="3"/>
+                </Style>
+            </UniformGrid.Resources>
+            <TextBlock Text="Color"/>
+            <TextBox Text="{Binding Color}"/>
+            <TextBlock Text="Name"/>
+            <TextBox Text="{Binding Athlete}"/>
+            <TextBlock Text="Event"/>
+            <TextBox Text="{Binding TheEvent}"/>
+            <TextBlock Text="Year"/>
+            <TextBox Text="{Binding Year}"/>
+            <TextBlock Text="Record"/>
+            <CheckBox Content="World/Olympic Record" IsChecked="{Binding IsRecord}" />
+            
+        </UniformGrid>
+    </DockPanel>
 </Window>

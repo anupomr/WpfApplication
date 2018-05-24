@@ -20,6 +20,7 @@ namespace DataBinding_SingleObject
     /// </summary>
     public partial class MainWindow : Window
     {
+        public Medal medal { get; set; }
         public MainWindow()
         {
             InitializeComponent();
