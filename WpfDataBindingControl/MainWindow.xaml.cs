@@ -36,6 +36,13 @@ namespace WpfDataBindingControl
                 case "btnTwoWay":
                     new WinTwoWay().ShowDialog();
                     break;
+                case "btnOneWayToTarget":
+                    new WinOneWayToTarget().ShowDialog();
+                    break;
+                case "btnOneWayToSource":
+                    new WinOneWayToSource().ShowDialog();
+                    break;
+
             }
                  
 
