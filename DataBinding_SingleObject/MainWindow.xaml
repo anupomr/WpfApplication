@@ -16,7 +16,7 @@
                     <Setter Property="Width" Value="5,1"/>
                 </Style>
             </StackPanel.Resources>
-            <Button Content="Change Color" Click="btnChageColor"/>
+            <Button Content="Change Color" Click="btnChangeColor" ClickMode="Press"/>
             <Button Content="Change Name" Click="btnChangeName"/>
             <Button Content="Show Medal" Click="btnShowObject"/>
         </StackPanel>
