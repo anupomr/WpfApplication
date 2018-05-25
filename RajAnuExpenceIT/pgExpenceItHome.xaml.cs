@@ -24,5 +24,12 @@ namespace RajAnuExpenceIT
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            // View Expense Report
+            NavigationService.Navigate(new pgExpenceReportPage(peopleListBox.SelectedItem));
+
+        }
     }
 }
