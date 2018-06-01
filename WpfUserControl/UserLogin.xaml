@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="WpfUserControl.UserLogin"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfUserControl"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <!--Row 0-->
+        <Label Grid.ColumnSpan="2" Background="Blue" FontSize="18"
+               Foreground="White" Content="Login To Inventory System"/>
+        <!--Row 1-->
+        <TextBlock Grid.Row="1" Text="User Name"/>
+        <TextBox x:Name="txtUserName" Grid.Row="1" Grid.Column="1"
+                Text ="Anupom Roy"/>
+        <!--Row 2-->
+        <TextBlock Grid.Row="2" Text="Password"/>
+        <PasswordBox x:Name="txtPassword" Grid.Row="2" Grid.Column="1"
+                 Password="Anupom Roy" PasswordChar="X"/>
+        <!--Row 3-->
+        <CheckBox Grid.Row="3" Grid.ColumnSpan="2" Content="Remember Password"
+                  HorizontalAlignment="Center"/>
+        <!--Row 4-->
+        <StackPanel Grid.Row="4" Grid.ColumnSpan="2" Orientation="Horizontal" >
+            <Button Content="Clear" Width="100" Margin="5,1,5,1"/>
+
+            <Button Content="OK" Width="100" Margin="5,1,5,1" />
+            
+        </StackPanel>
+                    
+    </Grid>
+</UserControl>

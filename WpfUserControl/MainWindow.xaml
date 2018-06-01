@@ -6,15 +6,21 @@
         xmlns:local="clr-namespace:WpfUserControl"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    
-        <TabControl >
-            <TabItem Header="Login">
-                <WrapPanel Background="AliceBlue"/>
-            </TabItem>
-            <TabItem Header="Inventory">
-                <Grid Background="LightBlue"/>
-            </TabItem>
-        </TabControl>
 
-    
+    <TabControl >
+        <TabItem Header="Login">
+            <WrapPanel Background="AliceBlue" >
+
+                <local:UserLogin Height="202" Width="257"/>
+            </WrapPanel>
+
+        </TabItem>
+        <TabItem Header="Inventory">
+            <Grid Background="LightBlue">
+                <local:UserInventory HorizontalAlignment="Left" Height="138" Margin="92,81,0,0" VerticalAlignment="Top" Width="151"/>
+            </Grid>
+        </TabItem>
+    </TabControl>
+
+
 </Window>
